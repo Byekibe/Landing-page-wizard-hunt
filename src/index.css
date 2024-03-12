@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.install-btn {
+  background-color: #18181c;
+  height: 32px;
+  align-items: center;
+}
+
+.chrome-icon {
+  width: 19.19px;
+  height: 19.19px;
+}
+
+.install-text {
+  font-family: Mulish;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
