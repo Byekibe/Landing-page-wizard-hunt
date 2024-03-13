@@ -20,22 +20,35 @@ const Header = () => {
           <img src={logo} alt="Your Brand Logo" className="h-8 w-auto mr-2" />
           Wizardshot
         </Link>
-        <nav className="hidden md:flex space-x-8">
-          <a href="#" className="text-gray-600 hover:text-gray-800 font-medium">
+        <nav className="hidden md:flex space-x-4">
+          <Link
+            to="/"
+            className="text-gray-600 hover:text-gray-800 font-medium text-size"
+          >
             Home
-          </a>
-          <a href="#" className="text-gray-600 hover:text-gray-800 font-medium">
+          </Link>
+          <Link
+            to="/"
+            className="text-gray-600 hover:text-gray-800 font-medium text-size"
+          >
             Features
-          </a>
-          <a href="#" className="text-gray-600 hover:text-gray-800 font-medium">
+          </Link>
+          <Link
+            to="/"
+            className="text-gray-600 hover:text-gray-800 font-medium text-size"
+          >
             About
-          </a>
-          <a href="#" className="text-gray-600 hover:text-gray-800 font-medium">
+          </Link>
+          <Link
+            to="/"
+            className="text-gray-600 hover:text-gray-800 font-medium text-size"
+          >
             Help Center & Community
-          </a>
+          </Link>
         </nav>
-        <div>
-          <button className="install-btn hidden md:flex items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded md:ml-4">
+        <div className="flex items-center">
+          <div className="hidden md:flex">Login</div>
+          <button className="install-btn hidden md:flex items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 rounded md:ml-4">
             <img
               className="px-1 chrome-icon"
               src={chromeIcon}
@@ -89,16 +102,21 @@ const Header = () => {
             >
               Help Center & Community
             </a>
-            <div>
-              <button className="install-btn flex bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded md:ml-4">
-                <img
-                  className="px-1 chrome-icon"
-                  src={chromeIcon}
-                  alt="Chrome browser icon"
-                />{" "}
-                <span className="install-text">Install Wizardshot</span>
-              </button>
-            </div>
+            <a
+              href="#"
+              className="block text-gray py-2 hover:text-gray-800 font-medium"
+            >
+              Log in
+            </a>
+
+            <button className="install-btn flex bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 rounded md:ml-4">
+              <img
+                className="px-1 chrome-icon"
+                src={chromeIcon}
+                alt="Chrome browser icon"
+              />{" "}
+              <span className="install-text">Install Wizardshot</span>
+            </button>
           </div>
         )}
       </div>
