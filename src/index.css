@@ -5,7 +5,13 @@
 .install-btn {
   background-color: #18181c;
   height: 32px;
+  width: fit-content;
   align-items: center;
+  min-width: max-content;
+  padding: 4px;
+}
+
+.text-size {
 }
 
 .chrome-icon {
@@ -17,7 +23,17 @@
   font-family: Mulish;
   font-size: 14px;
   font-weight: 700;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
+  /* line-height: 22px; */
+  /* letter-spacing: 0em; */
+}
+
+@media screen and (max-width: 1024px) {
+  .install-text {
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+  .text-size {
+  }
 }
