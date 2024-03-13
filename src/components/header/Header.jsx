@@ -13,13 +13,15 @@ const Header = () => {
   return (
     <header className="bg-white fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link
-          to="/"
-          className="text-xl font-bold flex items-center text-gray-800"
-        >
-          <img src={logo} alt="Your Brand Logo" className="h-8 w-auto mr-2" />
-          Wizardshot
-        </Link>
+        <div className="main-logo">
+          <Link
+            to="/"
+            className="text-xl font-bold flex items-center text-gray-800"
+          >
+            <img src={logo} alt="Your Brand Logo" className="h-8 w-auto mr-2" />
+            <h1>Wizardshot</h1>
+          </Link>
+        </div>
         <nav className="hidden md:flex space-x-4">
           <Link
             to="/"
@@ -50,7 +52,7 @@ const Header = () => {
           <div className="hidden md:flex">Login</div>
           <button className="install-btn hidden md:flex items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 rounded md:ml-4">
             <img
-              className="px-1 chrome-icon"
+              className="chrome-icon px-1 object-contain"
               src={chromeIcon}
               alt="Chrome browser icon"
             />
