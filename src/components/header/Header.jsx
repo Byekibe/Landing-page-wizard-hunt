@@ -77,7 +77,7 @@ const Header = () => {
           </svg>
         </button>
         {isOpen && (
-          <div className="md:hidden absolute left-0 right-0 top-16 p-4">
+          <div className="md:hidden absolute left-0 right-0 top-16 p-4 bg-white">
             <a
               href="#"
               className="block text-gray py-2  hover:text-gray-800 font-medium"
